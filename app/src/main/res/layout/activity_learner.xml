@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LearnerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025"
+            app:srcCompat="@mipmap/ic_logo_foreground" />
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INDIAN UNION"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.677"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.034" />
+
+        <TextView
+            android:id="@+id/learner_lic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KERALA STATE"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.658"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uname"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DRIVING LICENCE"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/learner_lic"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/no"
+            android:layout_width="170dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="90dp"
+            android:text="No:"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/dateissued"
+            android:layout_width="170dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="90dp"
+            android:text="Date:"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="@+id/no"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Name"
+            android:textColor="#A00202"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/no"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="170dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.927"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/dateissued"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/swdof"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:text="S/W/D of"
+            android:textSize="18sp"
+            android:textColor="#A00202"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/guardian"
+            android:layout_width="170dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="@+id/swdof"
+            app:layout_constraintTop_toBottomOf="@+id/user"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/addr"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Address"
+            android:textSize="18sp"
+            android:textColor="#A00202"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swdof"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="170dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.927"
+            app:layout_constraintStart_toStartOf="@+id/addr"
+            app:layout_constraintTop_toBottomOf="@+id/guardian"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/doblabel"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:text="D.O.B"
+            android:textSize="18sp"
+            android:textColor="#A00202"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="170dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="@+id/doblabel"
+            app:layout_constraintTop_toBottomOf="@+id/address"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/bldlabel"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Blood group"
+            android:textSize="18sp"
+            android:textColor="#A00202"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doblabel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/blood"
+            android:layout_width="170dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="@+id/bldlabel"
+            app:layout_constraintTop_toBottomOf="@+id/dob"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/validfromlabel"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Valid From"
+            android:textSize="18sp"
+            android:textColor="#A00202"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bldlabel"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/validtolabel"
+            android:layout_width="170dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:text="Valid To "
+            android:textSize="18sp"
+            android:textColor="#A00202"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.927"
+            app:layout_constraintStart_toStartOf="@+id/validfromlabel"
+            app:layout_constraintTop_toBottomOf="@+id/blood"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/validfrom"
+            android:layout_width="130dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/validfromlabel"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/validto"
+            android:layout_width="170dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="@+id/validfrom"
+            app:layout_constraintTop_toBottomOf="@+id/validtolabel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/classlabel"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Class of vehicle"
+            android:textSize="18sp"
+            android:textColor="#A00202"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/validfrom"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/vehclass"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.928"
+            app:layout_constraintStart_toStartOf="@+id/classlabel"
+            app:layout_constraintTop_toBottomOf="@+id/validto"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
