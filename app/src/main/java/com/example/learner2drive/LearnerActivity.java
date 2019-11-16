@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -50,6 +51,7 @@ public class LearnerActivity extends AppCompatActivity {
 
         Intent intent=getIntent();
         String learner_lic=intent.getStringExtra("learner_lic");
+        Log.i("intent value",learner_lic);
         learner.setText(learner_lic);
         learner.setVisibility(View.GONE);
         getData();
@@ -59,6 +61,7 @@ public class LearnerActivity extends AppCompatActivity {
 
         String value=learner.getText().toString().trim();
         final String url=Config5.DATA_URL+value.trim();
+        Log.i("sting url",url);
 
         StringRequest stringRequest=new StringRequest(url, new Response.Listener<String>() {
             @Override

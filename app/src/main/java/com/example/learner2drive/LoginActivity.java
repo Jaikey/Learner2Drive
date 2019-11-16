@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,6 +24,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Console;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -88,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
                             JSONObject jsonObject=new JSONObject(response);
                             String success=jsonObject.getString("success");
                             JSONArray jsonArray=jsonObject.getJSONArray("login");
-
+                            //String learner ="KL43/0018451/2019";
                             if (success.equals("1")){
 
                                for (int i=0;i<jsonArray.length();i++) {
@@ -101,6 +103,8 @@ public class LoginActivity extends AppCompatActivity {
                                    //intent1.putExtra("uname",name);
                                    intent1.putExtra("learner_lic", learner);
                                    startActivity(intent1);
+                                   Log.i("intent",learner);
+                                   finish();
                                    //Toast.makeText(LoginActivity.this,"Welcome "+name+"\nLearner license:"+learner,Toast.LENGTH_LONG).show();
                                    progressBar.setVisibility(View.GONE);
 

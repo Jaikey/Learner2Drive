@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -45,6 +46,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // String extraName=getIntent().getStringExtra("uname");
+                Log.i("login intent",extralic);
 
                 Intent i=new Intent(getApplicationContext(),LearnerActivity.class);
                 //i.putExtra("uname",extraName);
